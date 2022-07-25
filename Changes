@@ -1,0 +1,6 @@
+# Revision history for Perl module Test::More::Bash
+---
+version: 0.0.1
+date:    Sun 24 Jul 2022 09:37:30 AM PDT
+changes:
+- Initial release

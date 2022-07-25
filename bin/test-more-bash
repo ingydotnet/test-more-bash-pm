@@ -1,0 +1,12 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use Test::More::Bash;
+
+my $test = shift;
+
+Test::More::Bash->new(
+    test => $test,
+)->run;
