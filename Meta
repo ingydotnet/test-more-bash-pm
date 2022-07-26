@@ -27,7 +27,7 @@ branch: main
 requires:
   perl: '5.10.1'
   Capture::Tiny: '0.48'
-  File::Share: '0.25'
+  File::Share: '0.26'
   Mo: '0.40'
   Mo::xxx: '0.13'
   Test::Simple: '1.302191'

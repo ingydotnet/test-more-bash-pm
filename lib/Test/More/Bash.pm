@@ -24,9 +24,6 @@ sub BUILD {
 
     my $share = File::Share::dist_dir('Test-More-Bash') or die;
 
-    $share =~ s{([\/\\])blib[\/\\].*}{${1}share};
-
-
     $ENV{PATH} = "$share:$ENV{PATH}";
 }
 
