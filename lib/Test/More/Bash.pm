@@ -1,7 +1,7 @@
 package Test::More::Bash;
 use Mo qw(build xxx);
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 
 use Test::More::Bash;
 use Capture::Tiny qw(capture);
