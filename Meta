@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: Test-More-Bash
-version: 0.0.2
+version: 0.0.3
 abstract: Write Perl tests in Bash
 homepage: https://bpan.org
 license: perl
