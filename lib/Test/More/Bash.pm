@@ -10,6 +10,17 @@ use File::Share;
 has test => ();
 has bash => ();
 
+sub import {
+    my $test_file = (caller)[1];
+
+    # Allow this generated test to pass:
+    return if $test_file =~ m{000-compile-modules.t$};
+
+    __PACKAGE__->new(
+        test => $test_file,
+    )->run;
+}
+
 sub BUILD {
     my ($self) = @_;
 
@@ -33,7 +44,7 @@ sub run {
     my $bash = $self->bash;
     my $test = $self->test;
 
-    system(
+    exec(
         $bash,
         '-c',
         "source test-more.bash; source $test",
